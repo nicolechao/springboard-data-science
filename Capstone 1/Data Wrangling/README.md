@@ -1,7 +1,7 @@
 # Data Wrangling for Seattle Airbnb Listing Price Prediction
 
 ## Problem
-Using data in 'data/*.csv' and data wrangling skills to clean data.
+Using data in 'Data/*.csv' and data wrangling skills to clean data.
 
 
 ## Approach
