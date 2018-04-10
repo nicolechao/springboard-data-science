@@ -1,6 +1,6 @@
 # 1st Capstone Project
 
-## Problem: Airbnb Listing Price prediction
+## Problem: Seattle Airbnb Listing Price prediction
 As Airbnb has become one of the most popular hospitality services around the world, it would be interesting & important to predict listing price of Airbnb for both Airbnb itself and traveller. 
 
 ## Potential Clients
