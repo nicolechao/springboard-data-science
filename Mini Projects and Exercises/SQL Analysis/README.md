@@ -20,6 +20,6 @@
 [SQL code on mode analytics website](https://modeanalytics.com/nicolechao/reports/a7f44918f91b)
 
 
-## References
+## Reference
 [Problem definition on mode analytics](https://community.modeanalytics.com/sql/tutorial/a-drop-in-user-engagement/)
 
