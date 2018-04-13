@@ -6,8 +6,8 @@ Using cleaned data from data wrangling stage and apply exploratory data analysis
 
 ## Approach
 1. With hypothesis, test if the hypothesis is true.
-2. Using panads, matplotlib.pyplot & seaborn to plot dist plot, count plot, scatter plot, etc.
-3. Ask follow-up qusetions
+2. Using panads, matplotlib.pyplot & seaborn to plot dist plot, count plot, scatter plot, etc. for analysis.
+3. Ask follow-up qusetions.
 4. Repeated the above procedure until all the question are aksed and answered.
 
 
