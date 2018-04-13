@@ -13,4 +13,4 @@ Using cleaned data from data wrangling stage and apply exploratory data analysis
 
 ## Deliverables
 1. Exploratory Data Analysis code in Python notebook.
-2. Conlusion from Exploratory Data Analysis.
+2. Conclusion from Exploratory Data Analysis.
