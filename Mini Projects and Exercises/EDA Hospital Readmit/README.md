@@ -10,8 +10,8 @@ In October 2012, the US government's Center for Medicare and Medicaid Services (
 
 
 ## Approach
-* critique a preliminary analysis of readmissions data and recommendations (provided below) for reducing the readmissions rate
-* construct a statistically sound analysis and make recommendations of your own
+* critique a preliminary analysis of readmissions data and recommendations for reducing the readmissions rate
+* construct a statistically sound analysis and make recommendations of my own
 
 
 ## Deliverables
