@@ -9,7 +9,7 @@ The Boston Housing data set contains information about the housing values in sub
 
 
 ## Approach
-1. EDA for linear relationships
+1. EDA for linear relationships.
 2. Linear regression with the Boston Housing data set.
 3. Comparing models.
 4. Evaluating the model via model assumptions.
