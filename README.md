@@ -9,3 +9,4 @@ Each subdirectory has its own README for problem description, approaches and del
 4. Exploratory Data Analysis Mini Project: Human Body Temperature
 5. Exploratory Data Analysis Mini Project: Racial Discrimination in the US Job Market
 6. Exploratory Data Analysis Mini Project: Hospital Readmissions Data Analysis and Recommendations for Reduction
+7. Linear Regression: Boston Housing Price Prediction.
