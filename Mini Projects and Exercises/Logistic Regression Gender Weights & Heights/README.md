@@ -1,4 +1,4 @@
-# Linear Regression Mini Project
+# Logistic Regression Mini Project
 
 
 ## Problem: Human Gender Prediction on Heights & Weights
