@@ -6,7 +6,7 @@ Predict gender with heights & weights.
 
 
 ## Approach
-1. EDA for relationships between weights & heights.
+1. EDA for relationships among weights, heights & gender.
 2. Apply logistic regression.
 3. Tune hyperparameter with GridSearchCV from sklearn.
 4. Evaluate the model by checking accuracy.
