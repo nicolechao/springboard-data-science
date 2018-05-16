@@ -11,3 +11,4 @@ Each subdirectory has its own README for problem description, approaches and del
 6. Exploratory Data Analysis Mini Project: Hospital Readmissions Data Analysis and Recommendations for Reduction
 7. Linear Regression: Boston Housing Price Prediction
 8. Logistic Regression: Human Gender Prediction on Heights & Weights
+9. Clustering: Customer Segmentation
