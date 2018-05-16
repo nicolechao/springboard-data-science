@@ -9,6 +9,6 @@ Each subdirectory has its own README for problem description, approaches and del
 4. Exploratory Data Analysis Mini Project: Human Body Temperature
 5. Exploratory Data Analysis Mini Project: Racial Discrimination in the US Job Market
 6. Exploratory Data Analysis Mini Project: Hospital Readmissions Data Analysis and Recommendations for Reduction
-7. Linear Regression: Boston Housing Price Prediction
-8. Logistic Regression: Human Gender Prediction on Heights & Weights
-9. Clustering: Customer Segmentation
+7. Linear Regression Mini Project: Boston Housing Price Prediction
+8. Logistic Regression Mini Project: Human Gender Prediction on Heights & Weights
+9. Clustering Mini Project: Customer Segmentation
