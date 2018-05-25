@@ -12,3 +12,4 @@ Each subdirectory has its own README for problem description, approaches and del
 7. Linear Regression Mini Project: Boston Housing Price Prediction
 8. Logistic Regression Mini Project: Human Gender Prediction on Heights & Weights
 9. Clustering Mini Project: Customer Segmentation
+10. Naive Bayes Mini Project: Basic Text Classification
