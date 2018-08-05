@@ -13,7 +13,7 @@ By analyzing sentiment on recent movie reviews/comments, it can be used for movi
 
 
 ## Approach
-1. Apply techniques like TF-IDF and/or wordvec to represent text data
+1. Apply techniques like TF-IDF and/or wordvec to represent text data.
 2. Apply machine learning model to predict sentiment on movie reviews.
 
 
