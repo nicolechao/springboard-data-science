@@ -4,7 +4,7 @@ Hi! This portfolio contains a list of data science projects & exercises that I'v
 Each subdirectory has its own README for problem description, approaches and deliverables.
 
 1. Capstone 1: Seattle Airbnb Listing Price prediction
-2. Capstone 2: Sentiment Analysis on Twitter Movie Reviews
+2. Capstone 2: Sentiment Analysis on Movie Reviews with Tweets
 3. SQL-Based Data Exerciese: Investigating a Drop in Yammer User Engagement
 4. JSON-Based Data Exercises: World Bank Project
 5. Exploratory Data Analysis Mini Project: Human Body Temperature
