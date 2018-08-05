@@ -5,7 +5,7 @@ Applying machine learning models to predict Airbnb listing price.
 
 
 ## Approach
-1. Apply 5 different models to get initial modeling results.
+1. Apply 6 different models to get initial modeling results.
  * K-Nearest Neighbors
  * Linear Regression
  * Ridge Regression
