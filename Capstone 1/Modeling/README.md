@@ -11,9 +11,11 @@ Applying machine learning models to predict Airbnb listing price.
  * Ridge Regression
  * Lasso Regression
  * Random Forest
+ * Gradient Boosting
 2. Analyze outliers for each model and pick models that might be more suitable.
 3. Add more features iteratively to get better prediction.
 
 
 ## Deliverables
 1. Modeling code in Python notebook.
+2. Conclusion from machine learning modeling.
