@@ -1,12 +1,12 @@
 # 2nd Capstone Project
 
 
-## Problem: Sentiment Analysis on Movie Reviews
-Analyze sentiment on recent movie reviews/comments on a scale of five values: negative, somewhat negative, neutral, somewhat positive, positive. 
+## Problem: Sentiment Analysis on Movie Reviews with Tweets
+Analyze sentiment on recent movie-related tweets on a scale of five values: negative, somewhat negative, neutral, somewhat positive, positive. 
 
 
 ## Potential Clients
-By analyzing sentiment on recent movie reviews/comments, it can be used for movie theater to predict how good the movie is and whether they should continue playing it or add more number of showings. It can also be used for movie producer to decide what kind of movie will be more popular and optimize their revenue.
+By analyzing sentiment on movie reviews with tweets, it can be used for movie theater to predict how good the movie is and whether they should continue playing it or add more number of showings. It can also be used for movie producer to decide what kind of movie will be more popular and optimize their revenue.
 
 ## Data
 * We will scrape reviews and comments from [Twitter](https://twitter.com).
