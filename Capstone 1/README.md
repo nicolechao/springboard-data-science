@@ -25,15 +25,15 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 
 ## Approach
 1. Apply data wrangling, exploratory data analysis & inferential statistics on the data set.
-1. For modeling, apply linear regression modles, K-Nearest Neighbors, Random Forest, Gradient Boosting for this supervised problem.
+2. For modeling, apply Linear Regression, K-Nearest Neighbors, Random Forest, Gradient Boosting for this supervised learning problem.
 
 
 ## Deliverables
 1. Code
- - data wrangling
- - exploratory data analysis
- - inferential statisitcs
- - machine learning modeling
+ - Data wrangling
+ - Exploratory data analysis
+ - Inferential statisitcs
+ - Machine learning modeling
 2. Milestone Report
 3. Project Report
 4. Blog post
