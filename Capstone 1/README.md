@@ -1,4 +1,5 @@
 # 1st Capstone Project
+[Report](https://github.com/nicolechao/springboard-data-science/blob/master/Capstone%201/Milestone%20Report/Milestone%20Report.pdf)
 
 
 ## Problem: Seattle Airbnb Listing Price prediction
