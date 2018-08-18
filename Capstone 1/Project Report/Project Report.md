@@ -83,5 +83,154 @@ Initial findings are:
  - For the rest of Airbnbs, not many of them can accommodate more than 10 people. In fact, only 1.3% of listings can accommodate 10 or more than 10 people, and other than First Hill, most of them are located in some suburban area.
 
 
+## Modeling
+With insights based on exploratory data analysis (EDA), we start to train predictive models.
+
+
+We check the distribution of our target, which is price & confirmed that taking log can make it distribute more normally & skew is much improved.
+
+![PriceOriVsLog](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Price_ori_vs_log.png
+)
+
+We first try the following five models:
+
+1. K-Nearest Neighbors
+2. Linear Regression
+3. Ridge Regression
+4. Lasso Regression
+5. Random Forest
+
+With three features:
+
+1. Accommodates
+2. Bathrooms
+3. Bedrooms
+
+Test size of Train-test-split is set to 33%.
+
+For linear models including Linear Regression, Ridge Regression & Lasso Regression, we also try to take log on price. Here's a brief summary for Root-Mean-Squared-Error (RMSE) of each model:
+
+1. K-Nearest Neighbors
+ - Best hyperparameter for n_neighbors is 33. RMSE is  63.8775604886.
+2. Linear Regression
+ - If not taking log on price: RMSE is 65.782884005.
+ - If taking log on price: RMSE is 80.6990729468.
+3. Ridge Regression
+ - If not taking log on price: Best hyperparameter for alpha is 50. RMSE is 65.7372413634.
+ - If taking log on price: Best hyperparameter for alpha is 10. RMSE is 80.4074239407.
+4. Lasso Regression
+ - If not taking log on price: Best hyperparameter for alpha is 0.0001. RMSE is 65.782902475.
+ - If taking log on price: Best hyperparameter for alpha is 0.0001. RMSE is 80.6875515723.
+5. Random Forest
+ - Best hyperparameter for max_depth is 10. Best n_estimators is 30. RMSE is 65.8094760545.
+
+There are more plots including:
+
+1. Histogram of predicted price
+2. Actual price vs. predicted price
+3. Residual plot
+4. Histogram of residuals
+
+for each model in Appendix.
+
+TODO: Add model vs. RMSE plot.
+
+The first trial shows that
+
+1. KNN has best RMSE.
+2. Although taking log on price did make it distribute more normally, RMSE isn't better.
+ - We plot influence plot to check if there’s high leverage point: ![PriceGeo](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/influence_plot.png)
+ - And by removing high leverage points, we trained the model again. However RMSE still isn’t better on linear models.
+ - By analyzing further, it looks like there are less data points with price above about 300 and looks like they have a different linear relationship. For this piecewise linear regression is sometimes used.
+
+We then get back to the models. As KNN & Random Forest have best results so far, we analyze outliers of these two models further.
+
+For both models, there are many data with **actual price greater than 600 while predicted price is less than 400**. By looking into them, we found that over half of them are **house** in terms of **property type**, which means it worths to try to add property type into our features.
+
+We then try to add property type into our features:
+1. K-Nearest Neighbors
+ - Best hyperparameter for n_neighbors is 17. RMSE is  66.2413412525.
+2. Random Forest
+ - Best hyperparameter for max_depth is 10. Best n_estimators is 80. RMSE is  65.4463938358.
+
+Without property type, KNN has RMSE 65.7802492126, random forest has RMSE 66.1536873354.
+
+After adding property type, KNN gives 66.2413412525, random forest gives 65.4463938358. **Looks like KNN result degraded while Random Forest is improved.**
+
+Also in exploratory data analysis (EDA), we also found that price is also affected by neighborhood. We further added into our features.
+
+1. K-Nearest Neighbors
+ - Best hyperparameter for n_neighbors is 4. RMSE is 73.3585695725.
+2. Random Forest
+ - Best hyperparameter for max_depth is 10. Best n_estimators is 90. RMSE is  63.5181692736.
+
+By adding neighborhood, we can further improve Random Forest results a little bit. RMSE is improved from 65.4463938358 to 63.5181692736.
+
+**However KNN results degrade a lot. By inspecting the KNN models, number of 'n_neighbors' became smaller & smaller when we add more features.**
+
+**Note that KNN depends on similar neighbor data points to get better prediction results. It looks like when we add more features, it increased dementinality. W/ the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.**
+
+**On the other hand, random forest by nature automatically select useful features for splitting so did not have this issue.**
+
+Last but not least, we try the Gradient Boosting model.
+
+Initial trial with hyperparameter tuning only on n_estimators shows that RMSE is 63.749581598.
+
+If we tune more hyperparameters, like learning_rate and max_depth, RMSE is further improved to 63.1581040609, which is the best out of all the models.
+
+In my opinion it proved that with the techniques of gradient boosting, it can indeed improve prediction accuracy.
+
+
+### Summary for Modeling
+1. We tried 6 different models on Airbnb listing price prediction
+ - K-Nearest Neighbors
+ - Linear Regression
+ - Ridge Regression
+ - Lasso Regression
+ - Random Forest
+ - Gradient Boosting
+2. KNN & random forest outperforms linear regression models. After adding more features, random forest performs better than KNN.
+ - If looking at KNN results, after adding more features, best parameter for n_neighbors became less. It might be because KNN depends on similar neighbor data points to get better prediction results. When adding more features, it increased dementinality. W/ the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.
+ - On the other hand, random forest by nature automatically select useful features when splitting so did not have this issue.
+3. Linear regression models did not perform well because here are less data points with price above about 300 and looks like they have a different linear relationship. For this piecewise linear regression is sometimes used.
+4. Gradient boosting model gives the BEST RMSE compared to all other models.
+
+
+## Conclusion
+TODO: reiterate why this is important to the business.
+
+## Next Steps
+While we already tried several models, there are still some interesting future works:
+
+1. Apply natural language processing (NLP) on Airbnb reviews for better listing price prediction.
+2. Apply piecewise linear regression model.
+3. Apply models on other cities or training model on other cities.
+
+
 ## Other Potential Data Sets
 More data can be found at: [Inside Airbnb](http://insideairbnb.com/get-the-data.html).
+
+## Appendix
+
+Plots of each model for the initial modeling trial:
+
+1. K-Nearest Neighbors
+![KNNPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/KNN.png)
+2. Linear Regression
+ - Not taking log on price:
+![LinearPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Linear.png)
+ - Taking log on price:
+![LinearLogPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/LinearLog.png)
+3. Ridge Regression
+ - Not taking log on price:
+![RidgePlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Ridge.png)
+ - Taking log on price:
+![RidgeLogPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/RidgeLog.png
+)
+4. Lasso Regression
+ - Not taking log on price:
+![LassoLog](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Lasso.png)
+ - Taking log on price:
+![LassoLogPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/LassoLog.png)
+5. Random Forest
+![RandomForestPlot](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/RandomForest.png)
