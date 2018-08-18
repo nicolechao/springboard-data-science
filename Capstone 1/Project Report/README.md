@@ -125,18 +125,20 @@ For linear models including Linear Regression, Ridge Regression & Lasso Regressi
 5. Random Forest
  - Best hyperparameter for max_depth is 10. Best n_estimators is 30. RMSE is 65.8094760545.
 
-There are more plots including:
+A plot for each model and their corresponding RMSE is like:
+
+![ModelRMSE](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/ModelRMSE.png)
+
+We also include more plots on:
 
 1. Histogram of predicted price
 2. Actual price vs. predicted price
 3. Residual plot
 4. Histogram of residuals
 
-for each model in Appendix.
+of each model in Appendix.
 
-TODO: Add model vs. RMSE plot.
-
-The first trial shows that
+Based on the above results,
 
 1. KNN has best RMSE.
 2. Although taking log on price did make it distribute more normally, RMSE isn't better.
