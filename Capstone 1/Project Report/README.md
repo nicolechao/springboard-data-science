@@ -139,7 +139,7 @@ The first trial shows that
 
 1. KNN has best RMSE.
 2. Although taking log on price did make it distribute more normally, RMSE isn't better.
- - We plot influence plot to check if there’s high leverage point: ![PriceGeo](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/influence_plot.png)
+ - We plot influence plot to check if there’s high leverage point: ![PriceGeo](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/InfluencePlot.png)
  - And by removing high leverage points, we trained the model again. However RMSE still isn’t better on linear models.
  - By analyzing further, it looks like there are less data points with price above about 300 and looks like they have a different linear relationship. For this piecewise linear regression is sometimes used.
 
