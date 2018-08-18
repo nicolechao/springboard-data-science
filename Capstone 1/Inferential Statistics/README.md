@@ -12,4 +12,4 @@ Using panads, scipy.stats, matplotlib, seaborn to analyze correlation statistica
 
 
 ## Deliverables
-1. Code & plots in Python notebook.
+1. Code & plots in [Python notebook](https://github.com/nicolechao/springboard-data-science/blob/master/Capstone%201/Inferential%20Statistics/inferential_statistics.ipynb).
