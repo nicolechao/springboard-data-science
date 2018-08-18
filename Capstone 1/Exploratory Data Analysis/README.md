@@ -12,5 +12,4 @@ Using cleaned data from data wrangling stage and apply exploratory data analysis
 
 
 ## Deliverables
-1. Exploratory Data Analysis code in Python notebook.
-2. Conclusion from Exploratory Data Analysis.
+1. Exploratory Data Analysis code & conclusion in [Python notebook](https://github.com/nicolechao/springboard-data-science/blob/master/Capstone%201/Exploratory%20Data%20Analysis/exploratory_data_analysis.ipynb).
