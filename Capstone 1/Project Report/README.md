@@ -107,8 +107,9 @@ With three features:
 3. Bedrooms
 
 Test size of Train-test-split is set to 33%.
+We chose Root-Mean-Squared-Error (RMSE) as our scoring metric.
 
-For linear models including Linear Regression, Ridge Regression & Lasso Regression, we also try to take log on price. Here's a brief summary for Root-Mean-Squared-Error (RMSE) of each model:
+For linear models including Linear Regression, Ridge Regression & Lasso Regression, we also try to take log on price. Here's a brief summary RMSE of each model:
 
 1. K-Nearest Neighbors
  - Best hyperparameter for n_neighbors is 33. RMSE is  63.8775604886.
@@ -168,7 +169,7 @@ By adding neighborhood, we can further improve Random Forest results a little bi
 
 **However KNN results degrade a lot. By inspecting the KNN models, number of 'n_neighbors' became smaller & smaller when we add more features.**
 
-**Note that KNN depends on similar neighbor data points to get better prediction results. It looks like when we add more features, it increased dementinality. W/ the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.**
+**Note that KNN depends on similar neighbor data points to get better prediction results. It looks like when we add more features, it increased dementinality. With the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.**
 
 **On the other hand, random forest by nature automatically select useful features for splitting so did not have this issue.**
 
@@ -181,7 +182,7 @@ If we tune more hyperparameters, like learning_rate and max_depth, RMSE is furth
 In my opinion it proved that with the techniques of gradient boosting, it can indeed improve prediction accuracy.
 
 
-### Summary for Modeling
+### Summary
 1. We tried 6 different models on Airbnb listing price prediction
  - K-Nearest Neighbors
  - Linear Regression
@@ -190,14 +191,14 @@ In my opinion it proved that with the techniques of gradient boosting, it can in
  - Random Forest
  - Gradient Boosting
 2. KNN & random forest outperforms linear regression models. After adding more features, random forest performs better than KNN.
- - If looking at KNN results, after adding more features, best parameter for n_neighbors became less. It might be because KNN depends on similar neighbor data points to get better prediction results. When adding more features, it increased dementinality. W/ the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.
+ - If looking at KNN results, after adding more features, best parameter for n_neighbors became less. It might be because KNN depends on similar neighbor data points to get better prediction results. When adding more features, it increased dementinality. With the curse of dimensionality. Number of similar data points seems becoming less, so RMSE started to get higher.
  - On the other hand, random forest by nature automatically select useful features when splitting so did not have this issue.
 3. Linear regression models did not perform well because here are less data points with price above about 300 and looks like they have a different linear relationship. For this piecewise linear regression is sometimes used.
 4. Gradient boosting model gives the BEST RMSE compared to all other models.
 
 
 ## Conclusion
-TODO: reiterate why this is important to the business.
+With the model we have developed, now we are able to predict Airbnb listing price given several features, like bedrooms, bathrooms, accommodates, neighborhoods and property type. In addition, we acheived RMSE 63.1581040609 using XGBoost model, which means the square root of the average of squared differences between predicted price and actual price is only about 63. This can be very useful for both Airbnb host and the company itself, as they can now come up with a reasonble price to maximize their revenue.
 
 ## Next Steps
 While we already tried several models, there are still some interesting future works:
