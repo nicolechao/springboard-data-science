@@ -1,12 +1,10 @@
 ## 1st Capstone Project
-# Seattle ![Airbnb](Images/Logo.png) Listing Price Prediction
+# Seattle Airbnb Listing Price Prediction
 ####Yueh-Tung (Nicole) Chao
 
+![Home](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/homepage.tiff)
 
-![Home](Images/homepage.tiff)
-
-
-![Search](Images/Search.png)
+![Search](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Search.png)
 
 
 ##Problem
@@ -26,10 +24,10 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 * To visualize data on map, the shapefile of Seattle neighborhood can be found on Zillow: [Zillow Neighborhood Boundaries](https://www.zillow.com/howto/api/neighborhood-boundaries.htm).
 
 
-![Kaggle](Images/Kaggle.png)
+![Kaggle](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Kaggle.png)
 
 
-![Zillow](Images/SeattleGeo.png)
+![Zillow](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/SeattleGeo.png)
 
 
 ##Data Wrangling
@@ -68,7 +66,7 @@ Initial findings are:
 
 1. As we expected, listing price is correlated to accommodates, bedrooms, bathroom, neighborhood, and property type.
  * Interestingly looks like neighborhoods facing water (either bay or lake) seem to have higher listing prices, like Portage Bay.
-![PriceGeo](Images/PriceGeo.png)
+![PriceGeo](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/PriceGeo.png)
  - However there might be some exceptions:
     - There might be extremely high listing price although there's only one bedroom, but rarely happened.
     - If the property has a lot more bathrooms, ex. 8, but it's a dorm, the listing price would not increase proportionally.
