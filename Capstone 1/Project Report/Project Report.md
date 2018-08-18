@@ -2,7 +2,7 @@
 
 # Seattle Airbnb Listing Price Prediction
 
-####Yueh-Tung (Nicole) Chao
+#### Yueh-Tung (Nicole) Chao
 
 
 ![Home](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Homepage.png)
@@ -25,11 +25,8 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 ##Data Set
 * The listing data of Seattle Airbnb can be found on Kaggle: [Seattle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle).
 
-* To visualize data on map, the shapefile of Seattle neighborhood can be found on Zillow: [Zillow Neighborhood Boundaries](https://www.zillow.com/howto/api/neighborhood-boundaries.htm).
-
-
 ![Kaggle](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Kaggle.png)
-
+* To visualize data on map, the shapefile of Seattle neighborhood can be found on Zillow: [Zillow Neighborhood Boundaries](https://www.zillow.com/howto/api/neighborhood-boundaries.htm).
 
 ![Zillow](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/SeattleGeo.png)
 
