@@ -5,7 +5,7 @@
 ####Yueh-Tung (Nicole) Chao
 
 
-![Home](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/homepage.tiff)
+![Home](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Homepage.png)
 
 
 ![Search](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Search.png)
