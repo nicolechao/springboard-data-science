@@ -17,5 +17,4 @@ Applying machine learning models to predict Airbnb listing price.
 
 
 ## Deliverables
-1. Modeling code in Python notebook.
-2. Conclusion from machine learning modeling.
+1. Modeling code & conclusion in [Python notebook](https://github.com/nicolechao/springboard-data-science/blob/master/Capstone%201/Modeling/modeling.ipynb).
