@@ -17,4 +17,4 @@ Using pandas, matplotlib.pyplot & seaborn to load, analyze, plot & clean data.
 
 
 ## Deliverables
-1. Data wrangling code in Python notebook.
+1. Data wrangling code in [Python notebook](https://github.com/nicolechao/springboard-data-science/blob/master/Capstone%201/Data%20Wrangling/data_wrangling.ipynb).
