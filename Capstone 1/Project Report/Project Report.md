@@ -11,18 +11,18 @@
 ![Search](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Search.png)
 
 
-##Problem
+## Problem
 Airbnb is an American company operating online marketplace and hospitality service for people to lease or rent short-term lodging. The company does not own any real estate. Instead, it is a broker which received percentage service fees in conjunction with every booking.
 As from 2008, Airbnb has become one of the most popular hospitality services around the world, which has over 5 million lodging listings in 81,000 cities and 191 countries and has facilitated over 300 million check-ins. 
 One challenge that Airbnb hosts & Airbnb itself face is determining the optimal nightly rent price. As hosts, if charing too much, then the renter would select more affordable alternatives. On the other hand, if charging too less, then they lose the potential revenue. As for airbnb, if they can recommend optimal listing price to hosts to maximize their revenue, they can receive more service fees as well.
 So in this capstone project, we propose to predict airbnb listing price so that both hosts & AIrbnb can optimize their revenue.
 
 
-##Client
+## Client
 As mentioned in previous session, by predicting listing price, it can be used for both hosts and airbnb for better pricing optimization & maximize the revenue.
 
 
-##Data Set
+## Data Set
 * The listing data of Seattle Airbnb can be found on Kaggle: [Seattle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle).
 
 ![Kaggle](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Kaggle.png)
@@ -31,7 +31,7 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 ![Zillow](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/SeattleGeo.png)
 
 
-##Data Wrangling
+## Data Wrangling
 First, we input data & do data wrangling. We conduct the following steps to clean up data and pick useful features.
 
 1. Select columns that might be useful
