@@ -89,7 +89,7 @@ With insights based on exploratory data analysis (EDA), we start to train predic
 
 We check the distribution of our target, which is price & confirmed that taking log can make it distribute more normally & skew is much improved.
 
-![PriceOriVsLog](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Price_ori_vs_log.png
+![PriceOriVsLog](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/PriceOriVsLog.png
 )
 
 We first try the following five models:
