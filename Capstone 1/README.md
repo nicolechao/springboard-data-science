@@ -31,10 +31,10 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 
 ## Deliverables
 1. Code
- - Data wrangling
- - Exploratory data analysis
- - Inferential statisitcs
- - Machine learning modeling
-2. Milestone Report
-3. Project Report
+ - [Data wrangling](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Data%20Wrangling)
+ - [Exploratory data analysis](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Exploratory%20Data%20Analysis)
+ - [Inferential statisitcs](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Inferential%20Statistics)
+ - [Machine learning modeling](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Modeling)
+2. [Milestone Report](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Milestone%20Report)
+3. [Project Report](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%201/Project%20Report)
 4. Blog post
