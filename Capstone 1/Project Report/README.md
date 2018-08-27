@@ -213,7 +213,7 @@ As from 2008, Airbnb has become one of the most popular hospitality services aro
 
 In this project, we have done data wrangling to clean up [Seattle Airbnb Open Data](https://www.kaggle.com/airbnb/seattle). We also visulize data on map using the shapefile of Seattle neighborhood [Zillow Neighborhood Boundaries](https://www.zillow.com/howto/api/neighborhood-boundaries.htm). Interestingly neighborhoods facing water (either bay or lake) seem to have higher listing prices.
 
-In addition, with the model we have developed, now we are able to predict Airbnb listing price given several features, like bedrooms, bathrooms, accommodates, neighborhoods and property type. We acheived RMSE 63.1581040609 using XGBoost model, which means the square root of the average of squared differences between predicted price and actual price is only about 63. This can be very useful for both Airbnb host and the company itself, as they can now come up with a reasonble price to maximize their revenue.
+In addition, with the model we have developed, now we are able to predict Airbnb listing price given several features, like bedrooms, bathrooms, accommodates, neighborhoods and property type. We acheived RMSE 63.1581040609 using Gradient Booesting model (XGBoost), which means the square root of the average of squared differences between predicted price and actual price is only about 63. This can be very useful for both Airbnb host and the company itself, as they can now come up with a reasonble price to maximize their revenue.
 
 ## Next Steps
 While we already tried several models, there are still some interesting future works:
