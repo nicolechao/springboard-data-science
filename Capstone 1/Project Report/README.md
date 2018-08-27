@@ -92,15 +92,22 @@ We check the distribution of our target, which is price & confirmed that taking 
 ![PriceOriVsLog](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/PriceOriVsLog.png
 )
 
-We first try the following five models:
+We identified five models to try first:
 
 1. K-Nearest Neighbors
+	* Predict the label of a data point by
+		* Looking at the ‘k’ closest labeled data points
+		* Taking a majority vote
 2. Linear Regression
-3. Ridge Regression
-4. Lasso Regression
-5. Random Forest
+	* Predict the label of a data point by a linear function
+	* Loss function = Ordinary least squares (OLS), which is sum of squares ofresiduals
+3. Ridge Regression (L2 regularization)
+	* Same as Linear Regression but penalize large coefficients by L2 regularization: ![Ridge](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Ridge.gif)
+4. Lasso Regression (L1 regularization)
+	* Same as Linear Regression but penalize large coefficients by L1 regularization: ![Lasso](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%201/Images/Lasso.gif)5. Random Forest
+	* Predict the label of a data point by ensembling decision trees, which correct for decision trees' habit of overfitting.
 
-With three features:
+And train the above models with three features:
 
 1. Accommodates
 2. Bathrooms
@@ -200,6 +207,10 @@ In my opinion it proved that with the techniques of gradient boosting, it can in
 
 
 ## Conclusion
+As from 2008, Airbnb has become one of the most popular hospitality services around the world. One challenge that Airbnb hosts & Airbnb itself face is determining the optimal nightly rent price.
+
+In this project, we have done data wrangling to clean up data. We've 
+
 With the model we have developed, now we are able to predict Airbnb listing price given several features, like bedrooms, bathrooms, accommodates, neighborhoods and property type. In addition, we acheived RMSE 63.1581040609 using XGBoost model, which means the square root of the average of squared differences between predicted price and actual price is only about 63. This can be very useful for both Airbnb host and the company itself, as they can now come up with a reasonble price to maximize their revenue.
 
 ## Next Steps
