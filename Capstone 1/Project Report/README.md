@@ -182,7 +182,9 @@ By adding neighborhood, we can further improve Random Forest results a little bi
 
 **On the other hand, random forest by nature automatically select useful features for splitting so did not have this issue.**
 
-Last but not least, we try the Gradient Boosting model.
+Last but not least, we try the Gradient Boosting model, which predict the label of a data point by
+
+1. Iteratively learning a set of weak models on subsets of the data2. Weighing each weak prediction according to each weak learner'sperformance3. Combine the weighted predictions to obtain a single weightedprediction
 
 Initial trial with hyperparameter tuning only on n_estimators shows that RMSE is 63.749581598.
 
