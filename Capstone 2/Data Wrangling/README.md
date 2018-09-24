@@ -7,8 +7,9 @@ Using the scarped data stored in 'Data/tweets.csv' and data wrangling skills to 
 ## Approach
 Using pandas to load, analyze & clean data.
 
-1. Remove '\n' which represents newline in tweets.
-2. Remove URLs in tweets.
+1. Drop duplicate data points.
+2. Remove '\n' which represents newline in tweets.
+3. Remove URLs in tweets using regular expression.
 
 
 ## Deliverables
