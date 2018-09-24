@@ -40,7 +40,7 @@ and then we can get tweets about 'Mission Impossible' posted between 2018-06-01 
 
 ![MI6](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/MissionImpossible.png)
 
-Ny repeating the above process for recent movies, we collected about **15002** data points.
+By repeating the above process for recent movies, we collected about **15002** tweets.
 
 
 ## Data Wrangling
@@ -54,7 +54,7 @@ After applying the above steps, there are **14696** data points left.
 
 
 ## Initial Findings
-During exploratory data analysis, we ask the following questions:
+During exploratory data analysis, we ask the following questions to understand more about our data:
 
 1. How to identify useful tweets?
 2. With all the useful tweets, which movie occurs most?
@@ -64,8 +64,7 @@ and ask follow-up questions if needed.
 
 Initial findings are:
 
-1. We identify useful tweets using predefined keywords.
- - After searching predfined keywords and remove data points without these keywords, there are 7628 tweets.
+1. We identify useful tweets using predefined keywords. After searching predfined keywords and remove data points without these keywords, there are 7628 tweets.
 2. Then we check which movies occur most in tweets. The most common two are Jurassic World & Crazy Rich Asians considering our searching start-date is 2018-06-01 to 2018-09-11.
 ![MostCommon](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/MostCommon.png)
 3. We also analyze length of a tweets. After removing unwanted tokens, stop words & applying lemmatization, most of the tweets have about 4 ~ 11 useful words.
