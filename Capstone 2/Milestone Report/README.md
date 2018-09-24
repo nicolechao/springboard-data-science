@@ -70,7 +70,8 @@ Initial findings are:
 3. We also analyze length of a tweets. After removing unwanted tokens, stop words & applying lemmatization, most of the tweets have about 4 ~ 11 useful words.
 ![WordCountHist](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/WordCountHistogram.png)
 4. We tried to identify topic using both bad-of-words & TF-IDF. Looks like TD-IDF can at least generate more meaningful topic than bag-of-words.
-5. We inspect tweets outliers which are really short or long. An observation is short tweets are pretty straight forward on sentiments while long ones seem not.
+5. We inspect tweets outliers which are really short or long. An observation is short tweets are pretty straight forward on sentiments while long ones seem not. The following table lists some examples:
+![Outliers](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/Outliers.png | width=100)
 
 ## Other Potential Data Sets
 More data can be scraped give predefined keywords using Twitter Search URL.
