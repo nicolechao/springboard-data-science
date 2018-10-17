@@ -14,3 +14,4 @@ Each subdirectory has its own README for problem description, approaches and del
 9. Logistic Regression Mini Project: [Human Gender Prediction on Heights & Weights](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Logistic%20Regression%20Gender%20Weights%20%26%20Heights)
 10. Clustering Mini Project: [Customer Segmentation](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Clustering%20Customer%20Segmentation)
 11. Naive Bayes Mini Project: [Basic Text Classification](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Naive%20Bayes%20Basic%20Text%20Classification)
+12. Spark Mini-Project: [Spark DF, SQL, ML Exercise](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/5930918541830431/3404820184345514/4877238666634325/latest.html)
