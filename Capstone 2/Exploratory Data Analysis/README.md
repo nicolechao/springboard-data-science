@@ -6,7 +6,7 @@ Using cleaned data from data wrangling stage and apply exploratory data analysis
 
 ## Approach
 1. Ask questions. With hypothesis, test if the hypothesis is true.
-2. Using panads as data frame, nltk & gensim for NLP, matplotlib, seaborn & word_clout to plot bar plot, count plot, etc. to answer the questions.
+2. Using panads as data frame, nltk & gensim for NLP, matplotlib, seaborn & word_cloud to plot bar plot, count plot, etc. to answer the questions.
 3. Ask follow-up qusetions.
 4. Repeated the above procedure until all the question are aksed and answered.
 
