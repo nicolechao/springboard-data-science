@@ -80,8 +80,7 @@ Initial findings are:
 
 With insights based on exploratory data analysis (EDA), we start to train predictive models.
 
-We used [Valence Aware Dictionary and sEntiment Reasoner (VADER)]
-(http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf), a popular sentiment analysis package to generate sentiments, i.e., our labels. Note that the sentiment score is a floating number ranging from -1.0 to 1.0. -1.0 means negative while 1.0 means positive. 0 means neutral.
+We used [Valence Aware Dictionary and sEntiment Reasoner (VADER)](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf), a popular sentiment analysis package to generate sentiments, i.e., our labels. Note that the sentiment score is a floating number ranging from -1.0 to 1.0. -1.0 means negative while 1.0 means positive. 0 means neutral.
 
 A plot for average / minimum / maximum sentiment scores for each movie is like:
 
@@ -123,17 +122,17 @@ Based on the above results,
 2. mLSTM performs better than LSTM.
 3. TCN performs better than CNN.
 
-In addition, in general word-level accuracies are better than character-level.   The reason might be that the sentiments are actually formed by words instead of characters. So for character-level modeling, it would be better to predict next character, in some sense to predict the next words first, then to predict the sentiment.
+In addition, in general accuracies of word-level modesl are better than accuracies of character-level models. The reason might be that the sentiments are actually formed by words instead of characters. So for character-level modeling, it would be better to predict next character, which acts like to predict the next words first, then to predict the sentiment.
 
-There is a paper actually apply this idea, [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf), which trains model to predict next character and use the hidden state of these models to predict sentiment.
+There is a paper actually applying this idea, [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf), which trains model to predict next character and use the hidden state of these models to predict sentiment.
 
 We applied this idea on the above four models. A plot for each model and their coresponding accuracies is as followed:
 
 ![ModelNextCharAccuracies](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/ModelNextCharAccuracies.png)
 
-Indeed predicting character first and then use the hidden state to predict sentiment performs better than directly using characters to predict sentiments.
+Indeed predicting character first and then use the hidden state to predict sentiment performs better than directly using characters to predict sentiments and mLSTM gives the best accuracy.
 
-So, with all the models we trained, the best accuracy we acheive is about 0.65. However, training accuracy is actually higher in these models. For example, word-level mLSTM can achieve accuracy 0.89, which suggests we can get more data to improve the test accuracy.
+So, with all the models we trained, the best accuracy we acheived is about 0.65. We believe this can be improved by getting more data since the training accuracies are a lot better than testing accuracies.
 
 ### Summary
 1. We tried 4 different deep learning models for sentiment analysis on both word-level and character-level tweets.
