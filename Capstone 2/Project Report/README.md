@@ -78,17 +78,71 @@ Initial findings are:
 
 ## Modeling
 
-TODO.
+With insights based on exploratory data analysis (EDA), we start to train predictive models.
+
+We used [Valence Aware Dictionary and sEntiment Reasoner (VADER)]
+(http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf), a popular sentiment analysis package to generate sentiments, i.e., our labels. Note that the sentiment score is a floating number ranging from -1.0 to 1.0. -1.0 means negative while 1.0 means positive. 0 means neutral.
+
+A plot for average / minimum / maximum sentiment scores for each movie is like:
+
+![MovieSentiments](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/MovieSentiments.png)
+
+and the histogram of scores is like:
+
+![SentimentHistogram](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/SentimentHistogram.png)
+
+Note that we want to classify the sentiment into 5 groups, negative, somewhat negative, neutral, somewhat positive & positive. Intuitively, we classify them into 5 groups using three threshold -0.5, 0 & 0.5.
+
+As for modeling, we identified four deep learning models, which are good for natural language processing to try.
+
+
+ 1. Long Short-Term Memory (LSTM)
+    * TODO
+ 2. Multiplicative Long-Short Term Memory (mLSTM)
+    * TODO
+ 3. Convolutional Neural Network (CNN)
+    * TODO
+ 4. Temporal Convolutional Network (TCN)
+    * TODO
+
+And we train the above models with
+
+1. Word-level Tweets
+2. Character-level Tweets
+
+Test size of Train-test-split is set to 33%.
+We use accuracy and scoring metric since it's a classification problem.
+
+A plot for each model and their coresponding accuracies is as followed:
+
+![ModelAccuracies](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/ModelAccuracies.png)
+
+Based on the above results,
+
+1. mLSTM & TCM have best accuracies.
+2. mLSTM performs better than LSTM.
+3. TCN performs better than CNN.
+
+In addition, in general word-level accuracies are better than character-level.   The reason might be that the sentiments are actually formed by words instead of characters. So for character-level modeling, it would be better to predict next character, in some sense to predict the next words first, then to predict the sentiment.
+
+There is a paper actually apply this idea, [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf), which trains model to predict next character and use the hidden state of these models to predict sentiment.
+
+We applied this idea on the above four models. A plot for each model and their coresponding accuracies is as followed:
+
+![ModelNextCharAccuracies](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/ModelNextCharAccuracies.png)
+
+Indeed predicting character first and then use the hidden state to predict sentiment performs better than directly using characters to predict sentiments.
+
+So, with all the models we trained, the best accuracy we acheive is about 0.65. However, training accuracy is actually higher in these models. For example, word-level mLSTM can achieve accuracy 0.89, which suggests we can get more data to improve the test accuracy.
 
 ### Summary
-1. We tried 4 different deep learning models on sentiment analysis
+1. We tried 4 different deep learning models for sentiment analysis on both word-level and character-level tweets.
  - Long Short-Term Memory (LSTM)
  - Multiplicative Long-Short Term Memory (mLSTM)
  - Convolutional Neural Network (CNN)
  - Temporal Convolutional Network (TCN)
-2. In generatl word-level mLSTM & TCN have the best accuracies for predicting sentiment. This can show that models with more memory performs better on tweets data.
-3. mLSTM also performs well when predicting next character of the texts.
-predicting sentiment with hidden state of predicting next characeter with character-level texts. out of total 4 modesl, LSTM, mLSTM, CNN & TCN.
+2. In generatl word-level mLSTM and TCN have the best accuracies for predicting sentiment. Accuracy of mLSTM is 0.651 and accuracy of TCM is 0.655. This can show that models with more memory performs better on tweets data.
+3. mLSTM also performs well when predicting sentiment with hidden state of predicting next characeter with character-level texts.
 4. Training accuracy is always higher than test accuracy, which can be improved with more data.
 
 
@@ -119,10 +173,8 @@ More data can be scraped give predefined keywords using Twitter Search URL.
  * Paper: [VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
 2. Multiplicative Long-Short Term Memory (mLSTM)
  * Paper: [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf)
- * Paper: [MULTIPLICATIVE LSTM FOR SEQUENCE MODELLING](https://arxiv.org/pdf/1609.07959.pdf)
+ * Paper: [Multiplicative LSTM for Sequence Modeling](https://arxiv.org/pdf/1609.07959.pdf)
  * Code: https://github.com/titu1994/Keras-Multiplicative-LSTM
 2. Temporal Convolutional Network (TCN)
  * Paper: [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
  * Code: https://github.com/philipperemy/keras-tcn
-
-## Appendix
