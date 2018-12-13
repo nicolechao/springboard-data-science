@@ -110,13 +110,13 @@ And we train the above models with
 2. Character-level Tweets
 
 Test size of Train-test-split is set to 33%.
-We use accuracy and scoring metric since it's a classification problem.
+We use accuracy as scoring metric since it's a classification problem.
 
 A plot for each model and their coresponding accuracies is as followed:
 
 ![ModelAccuracies](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/ModelAccuracies.png)
 
-Based on the above results,
+Based on the above plot,
 
 1. mLSTM & TCM have best accuracies.
 2. mLSTM performs better than LSTM.
@@ -130,9 +130,9 @@ We applied this idea on the above four models. A plot for each model and their c
 
 ![ModelNextCharAccuracies](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/ModelNextCharAccuracies.png)
 
-Indeed predicting character first and then use the hidden state to predict sentiment performs better than directly using characters to predict sentiments and mLSTM gives the best accuracy.
+Indeed predicting next character first and then use the hidden state to predict sentiment performs better than directly using characters to predict sentiments. Also, among these models, mLSTM gives the best accuracy.
 
-So, with all the models we trained, the best accuracy we acheived is about 0.65. We believe this can be improved by getting more data since the training accuracies are a lot better than testing accuracies.
+So, in summary, with all the models we trained, the best accuracy we acheived is about 0.65. However, training accuracies are a lot higher. This might indicate that we do not have enough data points and we believe testing accuracy can be improved by adding more data points.
 
 ### Summary
 1. We tried 4 different deep learning models for sentiment analysis on both word-level and character-level tweets.
