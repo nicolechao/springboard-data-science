@@ -96,13 +96,18 @@ As for modeling, we identified four deep learning models, which are good for nat
 
 
  1. Long Short-Term Memory (LSTM)
-    * TODO
+    * Long Short-Term Memory or LSTM is a type of recurrent neural networks (RNN) which is capable of learning and remembering over long sequences of inputs.
+    * ![LSTM](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/LSTM.png)
  2. Multiplicative Long-Short Term Memory (mLSTM)
-    * TODO
+    * Multiplicative LSTM or mLSTM is a type of recurrent neural network that combines the long short-term memory (LSTM) and multiplicative recurrent neural network (mRNN).
+    * mRNN architecture is like: ![mRNN](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/mRNN.png)
  3. Convolutional Neural Network (CNN)
-    * TODO
+    * Convolutional neural network or CNN is a type of deep neural networks that utilizes layers with convolving filters that are applied to local features.
+    * ![CNN](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/CNN.png)
  4. Temporal Convolutional Network (TCN)
-    * TODO
+    * Temporal convolutional network or TCN is a deep neural netowkrs that combines the convolutional neural network and recurrent architectures.
+    * ![TCN](https://raw.githubusercontent.com/nicolechao/springboard-data-science/master/Capstone%202/Images/TCN.png)
+
 
 And we train the above models with
 
