@@ -173,12 +173,22 @@ There are some next steps we can do further to improve our model.
 More data can be scraped give predefined keywords using Twitter Search URL.
 
 ## References
-1. Valence Aware Dictionary and sEntiment Reasoner (VADER).
+1. Valence Aware Dictionary and sEntiment Reasoner (VADER)
  * Paper: [VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
-2. Multiplicative Long-Short Term Memory (mLSTM)
+2. Long-Short Term Memory (LSTM)
+ * Paper: [Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
+3. Multiplicative Long-Short Term Memory (mLSTM)
  * Paper: [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf)
  * Paper: [Multiplicative LSTM for Sequence Modeling](https://arxiv.org/pdf/1609.07959.pdf)
  * Code: https://github.com/titu1994/Keras-Multiplicative-LSTM
-2. Temporal Convolutional Network (TCN)
+4. Multiplicative Recurrent Neural Network (mRNN)
+ * Paper: [Generating Text with Recurrent Neural Networks](https://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
+5. Convolutional Neural Network (CNN)
+ * Paper: [Convolutional Neural Networks for Sentence Classification](https://www.aclweb.org/anthology/D14-1181)
+6. Temporal Convolutional Network (TCN)
  * Paper: [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
  * Code: https://github.com/philipperemy/keras-tcn
+
+ 
+ 
+ 
