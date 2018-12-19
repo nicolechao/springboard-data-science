@@ -21,10 +21,16 @@ Applying machine learning models to analyze sentiment on movie reviews with twee
 
 
 ## References
-1. mLSTM:
+1. LSTM
+ * Paper: [Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
+2. mLSTM:
  * Paper: [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf)
  * Paper: [Multiplicative LSTM for Sequence Modeling](https://arxiv.org/pdf/1609.07959.pdf)
  * Code: https://github.com/titu1994/Keras-Multiplicative-LSTM
-2. TCN:
+3. mRNN
+ * Paper: [Generating Text with Recurrent Neural Networks](https://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
+4. CNN:
+ * Paper: [Convolutional Neural Networks for Sentence Classification](https://www.aclweb.org/anthology/D14-1181)
+5. TCN:
  * Paper: [An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling](https://arxiv.org/pdf/1803.01271.pdf)
  * Code: https://github.com/philipperemy/keras-tcn
