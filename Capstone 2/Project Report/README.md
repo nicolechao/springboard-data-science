@@ -123,11 +123,13 @@ A plot for each model and their coresponding accuracies is as followed:
 
 Based on the above plot,
 
-1. mLSTM & TCM have best accuracies.
+1. mLSTM has the best accuracies.
 2. mLSTM performs better than LSTM.
 3. TCN performs better than CNN.
 
-In addition, in general accuracies of word-level modesl are better than accuracies of character-level models. The reason might be that the sentiments are actually formed by words instead of characters. So for character-level modeling, it would be better to predict next character, which acts like to predict the next words first, then to predict the sentiment.
+In addition, in general word-level accuracies are better than character-level.
+
+Not sure if for character-level, it would be better to predict next word first and then predict sentiment. Let's try it out.
 
 There is a paper actually applying this idea, [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf), which trains model to predict next character and use the hidden state of these models to predict sentiment.
 
