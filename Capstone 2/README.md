@@ -31,6 +31,7 @@ As mentioned in previous session, by analyzing sentiment on movie reviews with t
 2. Data Wrangling and Visualization: pandas, numpy, matplotlib, seaborn
 3. Natural Language Processing: re, nltk, wordcloud, gensim
 4. Machine Learning and Deep Learning: sklearn, keras
+5. Others: pickle
 
 ## Deliverables
 1. Code
