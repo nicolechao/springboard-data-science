@@ -26,6 +26,12 @@ As mentioned in previous session, by analyzing sentiment on movie reviews with t
 3. Apply deep learning models, including LSTM, mLSTM, CNN and TCN for this supervised classification problem. 
 
 
+## Used Packages
+1. Web Scraping: selenium
+2. Data Wrangling and Visualization: pandas, numpy, matplotlib, seaborn
+3. Natural Language Processing: re, nltk, wordcloud, gensim
+4. Machine Learning and Deep Learning: sklearn, keras
+
 ## Deliverables
 1. Code
  - [Data scraping](https://github.com/nicolechao/springboard-data-science/tree/master/Capstone%202/Data%20Scraping)
