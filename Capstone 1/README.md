@@ -32,6 +32,11 @@ As mentioned in previous session, by predicting listing price, it can be used fo
 1. Apply data wrangling, exploratory data analysis & inferential statistics on the data set.
 2. For modeling, apply Linear Regression, K-Nearest Neighbors, Random Forest, Gradient Boosting for this supervised learning problem.
 
+## Used Packages
+1. Data Wrangling and Visualization: pandas, numpy, matplotlib, seaborn
+2. GeoData: mpl_toolkits 
+3. Machine Learning: sklearn, scipy, statsmodels, xgboost
+4. Others: pickle, glob
 
 ## Deliverables
 1. Code
