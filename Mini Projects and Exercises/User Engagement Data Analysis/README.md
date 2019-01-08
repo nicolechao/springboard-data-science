@@ -27,19 +27,19 @@ Given a user table with data on 12,000 users who signed up for the product in th
 
 ## Approach
 1. Apply data wrangling to fix data types and fill missing values and fix outliers if applicable.
-2. Defining adopted user using time series analysis techniques.
+2. Define adopted user using time series analysis techniques.
 3. Analyze features predict future user adoption using logistic regression with L1 regularization.
 
 
 ## Conclusion
 Based on coefficient of the logistic regression results, we can conclud that 
 
-1. 'opted\_in\_to\_mailing\_list'
-2. 'creation\_source\_GUEST\_INVITE' &
-3. 'creation\_source\_SIGNUP\_GOOGLE\_AUTH'
+1. 'creation\_source'
+2. Email domain name
+3. 'opted\_in\_to\_mailing\_list'
+4. 'enabled\_for\_marketing\_drip'
 
-seem to be best features, which means that whether users opted into the mailing list and whether users are invited by other users or using Google Authentication to sign up are the best features.
-
+seem to be best features, which means that for users with specific creation source, such as ORG_INVITE, or email domain name, like @yahoo.com, or whether users opted into the mailing list and whether users enable for marketing drip are good features for predicting future user adoption.
 
 ## Deliverables
 1. Data wrangling, exploratory data analysis & modeling code in Python notebook.
