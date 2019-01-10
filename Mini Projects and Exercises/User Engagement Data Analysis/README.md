@@ -32,14 +32,24 @@ Given a user table with data on 12,000 users who signed up for the product in th
 
 
 ## Conclusion
-Based on coefficient of the logistic regression results, we can conclud that 
+Based on the above logistic regression results, we can conclud that
 
-1. 'creation\_source'
-2. Email domain name
-3. 'opted\_in\_to\_mailing\_list'
-4. 'enabled\_for\_marketing\_drip'
+1. org_id
+2. email domain name
+3. creation_source
+4. enabled_for_marketing_drip
+5. opted_in_to_mailing_list
 
-seem to be best features, which means that for users with specific creation source, such as ORG_INVITE, or email domain name, like @yahoo.com, or whether users opted into the mailing list and whether users enable for marketing drip are good features for predicting future user adoption.
+seem to be best features. 
+
+To be more specific, that means for users with specific org_id, email domain name, creation source or whether users opted into the mailing list and whether users enable for marketing drip are good features predicting future user adoption.
+
+Business-wise, we can analyze more on these features and look for potential users with similar features.
+
+For example, as there are many organizations (with specific org_ids) that have a lot of adopted users. It would be valuable to analyze what kind of organizations they are and look for similar organizations which can be future potential customers.
+
+In conclusion, the model can be useful to identify features to predict future user / organization adoption.
+
 
 ## Deliverables
 1. Data wrangling, exploratory data analysis & modeling code in Python notebook.
