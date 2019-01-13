@@ -28,25 +28,13 @@ Given a user table with data on 12,000 users who signed up for the product in th
 ## Approach
 1. Apply data wrangling to fix data types and fill missing values and fix outliers if applicable.
 2. Define adopted user using time series analysis techniques.
-3. Analyze features predict future user adoption using logistic regression with L1 regularization.
+3. Analyze features predict future user adoption using logistic regression.
 
 
 ## Conclusion
-Based on the above logistic regression results, we can conclud that
+Based on the logistic regression results, we can conclud that creation source seems to be the best feature for predicting future user adoption.
 
-1. org_id
-2. email domain name
-3. creation_source
-4. enabled_for_marketing_drip
-5. opted_in_to_mailing_list
-
-seem to be best features. 
-
-To be more specific, that means for users with specific org_id, email domain name, creation source or whether users opted into the mailing list and whether users enable for marketing drip are good features predicting future user adoption.
-
-Business-wise, we can analyze more on these features and look for potential users with similar features.
-
-For example, as there are many organizations (with specific org_ids) that have a lot of adopted users. It would be valuable to analyze what kind of organizations they are and look for similar organizations which can be future potential customers.
+Business-wise, we can analyze more on this feature. For example, there are total 5 different values of it now, which are 'GUEST_INVITE', 'ORG_INVITE', 'PERSONAL_PROJECTS', 'SIGNUP' & 'SIGNUP_GOOGLE_AUTH'. We can further analyze which of them has the best user adoption and see if there are similar organization/user that can potentially be future users.
 
 In conclusion, the model can be useful to identify features to predict future user / organization adoption.
 
