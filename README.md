@@ -15,4 +15,5 @@ Each subdirectory has its own README for problem description, approaches and del
 10. Clustering Mini Project: [Customer Segmentation](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Clustering%20Customer%20Segmentation)
 11. Naive Bayes Mini Project: [Basic Text Classification](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Naive%20Bayes%20Basic%20Text%20Classification)
 12. Spark Mini-Project: [Spark DF, SQL, ML Exercise](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/5930918541830431/3404820184345514/4877238666634325/latest.html)
-13. Time Series Data Analysis: [User Engagement Data Analysis](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/User%20Engagement%20Data%20Analysis)
+13. Time Series Data Analysis Mini Project: [User Engagement Data Analysis](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/User%20Engagement%20Data%20Analysis)
+14. Time Series Data Analysis Mini Project: [Rider Retension Prediction](https://github.com/nicolechao/springboard-data-science/tree/master/Mini%20Projects%20and%20Exercises/Rider%20Retension%20Prediction)
