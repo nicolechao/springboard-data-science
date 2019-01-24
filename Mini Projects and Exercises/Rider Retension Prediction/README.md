@@ -11,6 +11,7 @@
 
 
 ## Approach
+
 ### Part 1 ‑ Exploratory data analysis
 * Apply time series resmapling method to identify underlying pattern.
 
